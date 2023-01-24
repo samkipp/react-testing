@@ -1,11 +1,22 @@
+import React from 'react';
 import './App.css';
+import Items from './components/items';
 
-function App() {
-  return (
-    <>
-    <h1 style={{color: 'red'}}>Hello from App Component</h1>
-    </>
-  );
+
+class App extends React.Component{
+  render(){
+    const items = [
+      'jack',
+      'Alvin',
+      'Alex'
+    ]
+    return(
+      <>
+      <Items items={items}/>
+      </>
+    )
+  }
+  
 }
 
 export default App;
